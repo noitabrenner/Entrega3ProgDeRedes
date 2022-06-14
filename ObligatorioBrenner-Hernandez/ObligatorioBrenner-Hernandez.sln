@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryInterface", "Repo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{41CD22D6-A503-43D5-A791-1CD5534496F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcServer", "GrpcServer\GrpcServer.csproj", "{1AFDC47E-65C9-45EB-8325-1FD5087A70D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcServer", "GrpcServer\GrpcServer.csproj", "{1AFDC47E-65C9-45EB-8325-1FD5087A70D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerLogs", "ServerLogs\ServerLogs.csproj", "{22CB7FFF-E2D6-46A1-9DFE-B680AC7C8BF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{1AFDC47E-65C9-45EB-8325-1FD5087A70D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AFDC47E-65C9-45EB-8325-1FD5087A70D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AFDC47E-65C9-45EB-8325-1FD5087A70D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22CB7FFF-E2D6-46A1-9DFE-B680AC7C8BF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22CB7FFF-E2D6-46A1-9DFE-B680AC7C8BF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22CB7FFF-E2D6-46A1-9DFE-B680AC7C8BF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22CB7FFF-E2D6-46A1-9DFE-B680AC7C8BF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
