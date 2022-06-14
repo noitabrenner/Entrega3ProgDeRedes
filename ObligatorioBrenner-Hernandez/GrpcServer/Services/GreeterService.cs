@@ -12,11 +12,13 @@ namespace GrpcServer
     public class GreeterService : Greeter.GreeterBase
     {
         private readonly ILogger<GreeterService> _logger;
+        ILogProducer _logProducer;
         private readonly IUserLogic _userLogic;
-        public GreeterService(ILogger<GreeterService> logger, IUserLogic userLogic)
+        public GreeterService(ILogger<GreeterService> logger, IUserLogic userLogic, ILogProducer logProducer)
         {
             _userLogic = userLogic;
             _logger = logger;
+            _logProducer = logProducer;
         }
 
         public override Task<Reply> SayHello(HelloRequest request, ServerCallContext context)
@@ -33,7 +35,7 @@ namespace GrpcServer
             Reply reply = new Reply();
             reply.Message = _userLogic.AddUser(user);
             log += reply.Message;
-           // this._logProducer.PublishMessage(log);
+            this._logProducer.PublishMessage(log);
 
             return Task.FromResult(reply);
         }

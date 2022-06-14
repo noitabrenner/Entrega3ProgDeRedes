@@ -37,8 +37,6 @@ namespace GrpcServer
         }
         public void PublishMessage(string message)
         {
-
-
             var body = Encoding.UTF8.GetBytes(message);
 
             channel.BasicPublish(exchange: "",
