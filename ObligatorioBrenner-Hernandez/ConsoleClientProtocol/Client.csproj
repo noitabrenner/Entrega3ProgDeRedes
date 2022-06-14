@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Business\Business.csproj" />
+      <ProjectReference Include="..\Common\Common.csproj" />
+      <ProjectReference Include="..\Exceptions\Exceptions.csproj" />
+      <ProjectReference Include="..\File\FileManager.csproj" />
+      <ProjectReference Include="..\ProtocolLibrary\ProtocolLibrary.csproj" />
+    </ItemGroup>
+
+</Project>
